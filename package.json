@@ -1,0 +1,16 @@
+{
+  "name": "node-blog-app",
+  "version": "1.0.0",
+  "description": "Kick Starting With Server Side Rendering With Node",
+  "main": "index.js",
+  "scripts": {
+    "dev": "nodemon server.js"
+  },
+  "author": "Raza",
+  "license": "ISC",
+  "dependencies": {
+    "ejs": "^3.1.5",
+    "express": "^4.17.1",
+    "mongoose": "^5.10.3"
+  }
+}
