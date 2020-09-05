@@ -1,6 +1,14 @@
 const express = require("express");
-
+const mongoose = require("mongoose");
 const app = express();
+mongoose.connect("mongodb://localhost/blog", {
+  useCreateIndex: true,
+  useNewUrlParser: true,
+  useFindAndModify: false,
+  useUnifiedTopology: true,
+});
+
+app.use(express.urlencoded({ extended: false }));
 
 app.set("view engine", "ejs");
 
