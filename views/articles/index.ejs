@@ -23,6 +23,9 @@
             <%= article.createdAt%>
           </div>
           <div class="card-text mb-2"><%= article.description %></div>
+          <a href="/articles/<%=article.slug%>" class="btn btn-primary"
+            >Read More</a
+          >
         </div>
       </div>
       <% })%>
